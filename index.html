@@ -6,40 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    
+    
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo">Dashboard</div>
+            <div class="logo"><i class="material-icons">dashboard</i>Dashboard</div>
             <div class="mainNav">
-                <div>Home</div>
-                <div>Profile</div>
-                <div>Messages</div>
-                <div>History</div>
-                <div>Tasks</div>
-                <div>Communities</div>
+                <button class="btn"><i class="material-icons">home</i>Home</button>
+                <button class="btn"><i class="material-icons">perm_identity</i>Profile</button>
+                <button class="btn"><i class="material-icons">message</i>Messages</button>
+                <button class="btn"><i class="material-icons">history</i>History</button>
+                <button class="btn"><i class="material-icons">work</i>Tasks</button>
+                <button class="btn"><i class="material-icons">groups</i>Communities</button>
             </div>
             <div class="settings">
-                <div>Settings</div>
-                <div>Support</div>
-                <div>Privacy</div>
+                <button class="btn"><i class="material-icons">settings</i>Settings</button>
+                <button class="btn"><i class="material-icons">contact_support</i>Support</button>
+                <button class="btn"><i class="material-icons">verified_user</i>Privacy</button>
             </div>
         </div>
         <div class="header">
             <div class="tophead">
                 <form action="" method="get">
+                    <button type="submit"><i class="material-icons">search</i></button>
                     <input type="search" name="search" placeholder="Search...">
                 </form>
-                <div>
-                    <button></button>
-                    Zheng Xuan
+                <div class="controls">
+                    <button class="notification"><i class="material-icons">notifications</i></button>
+                    <img src="/images/dio.png" alt="Profile Picture">
+                    <p class="profileName">Zheng Xuan</p>
                 </div>
 
             </div>
             
             <div class="bothead">
-                <img src="" alt="Profile Picture">
-                <div>
+                <img src="/images/dio.png" alt="Profile Picture">
+                <div class="greeting">
                     <p>Hi there,</p>
                     <p>Zheng Xuan (@mollymcmuffin)</p>
                 </div>
@@ -50,15 +56,33 @@
         </div>
         <div class="content">
             <div class="mainContent">
-                <h3>Your Projects</h3>
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
-                <div>6</div>
+                <h4>Your Projects</h4>
+                <div class="card">1</div>
+                <div class="card">2</div>
+                <div class="card">3</div>
+                <div class="card">4</div>
+                <div class="card">5</div>
+                <div class="card">6</div>
             </div>
-            <div class="sideContent"></div>
+            <div class="sideContent">
+                <div class="annoucement">
+                    <h4>Anncouncements</h4>
+                    <div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <h4>Trending</h4>
+                    <div>
+                        <div>1</div>
+                        <div>2</div>
+                        <div>3</div>
+                        <div>4</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     

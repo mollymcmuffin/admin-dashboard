@@ -1,3 +1,12 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
 body{
     margin:0;
 }
@@ -49,9 +58,137 @@ div {
 .mainContent{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-auto-rows: 1fr;
+    gap: 15px;
+    padding: 0 15px;
+    padding-bottom: 15px;
     
 }
 
-.mainContent h3{
+.mainContent h4{
     grid-column: span 2;
+    
+}
+
+.mainNav, .settings{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+
+button {
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
+    gap: 15px;
+    background-color: #0ea5e9;
+    color: white;
+    font-size: large;
+    cursor: pointer;
+}
+
+.btn .material-icons{
+    font-size: 1.1rem !important;
+    
+}
+
+.btn:hover{
+    background-color: #0284c7;
+
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    background-color: #0ea5e9;
+    color: white;
+    font-size: large;
+    padding: 0 8px;
+}
+
+.logo i{
+    font-size: 3rem !important;
+}
+
+.tophead form{
+    display: flex;
+}
+
+.tophead i{
+    color: black;
+}
+
+.tophead button{
+    background-color: white;
+    border: none;
+}
+
+input[type="search"]{
+    border-radius: 15px;
+    border:none;
+    background-color:#e2e8f0;
+    
+}
+
+.notification{
+    
+}
+
+.controls{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+p.profileName{
+    font-weight: 700 ;
+}
+
+.mainNav .btn, .settings .btn {
+    border: none;
+}
+
+.bothead img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.greeting p:first-child{
+    font-size: 0.8rem;
+}
+
+
+.greeting {
+    font-weight: 700;
+}
+
+.controls img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.controls button{
+    padding:0;
+    border: 1px solid;
+    color:black;
+}
+
+.bothead button{
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.bothead button:hover{
+    background-color: #0284c7;
 }
